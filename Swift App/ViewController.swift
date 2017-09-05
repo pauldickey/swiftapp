@@ -12,29 +12,20 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var TheLabel: UILabel!
     
+    @IBOutlet weak var A: UITextField!
+   
     
-    var tapCount = 0
+    @IBOutlet weak var B: UITextField!
     
    
     @IBAction func buttonPush(_ sender: Any) {
         
-        tapCount = tapCount + 1
-        print(tapCount)
-        
-        if tapCount == 20 {
-            
-        
-            TheLabel.text = "You pressed 10 times!"
-        } else {
-            TheLabel.text = "Hello"
-        }
+        print(A.text!)
+        //Prints out what is in A box
+        print(B.text!)
+        //Prints out what is in B box
         
         
-        
-        if tapCount >= 11 {
-            
-        TheLabel.text = "Stop clicking"
-        }
 
     }
     
